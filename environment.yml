@@ -1,0 +1,23 @@
+# Development environment. This environment includes all the required
+# packages for this repo including running the test suite.
+name: pyleo
+channels:
+  - default
+  - conda-forge
+dependencies:
+  - python=3.11.0
+  - cartopy
+  - numba
+  - pyyaml
+  - requests
+  - scikit-learn
+  - seaborn
+  - statsmodels
+  - tabulate
+  - tqdm
+  - wget
+  - pip
+  - pytest
+  - pip:
+    - pyhht
+    - '-e .'
